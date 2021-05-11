@@ -1,5 +1,5 @@
-# Transcribing Speech to Text
+# Scrumdinger – Localization Experiment
 
-## Completed Project
+### Yes, hi, Perry Street Software!
 
-Explore the completed project for the [Transcribing Speech to Text](https://developer.apple.com/tutorials/apt-app-dev-training/transcribing-speech-to-text) tutorial.
+Having some fun with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial.
