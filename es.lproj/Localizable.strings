@@ -5,8 +5,53 @@
   Created by Stephen on 5/11/21.
   
 */
-
+// ScrumsView
 "Daily Scrums" = "Melé Diaria";
 
+// CardView
+"Attendees" = "Asistentes";
+"Meeting length" = "Duración de la sesión";
 
+//MeetingHeaderView
+"minute" = "minuto";
+"minutes" = "minutos";
+"Seconds Elapsed" = "Segundos Transcurridos";
+"Seconds Remaining" = "Segundos Restantes";
+"Time Remaining" = "Tiempo Restante";
 
+// MeetingFooterView
+"No more speakers" = "No más oradores";
+"Last Speaker" = "Último Orador";
+"Next Speaker" = "Próximo Orador";
+// how to represent strings with embedded interpolated values?
+// they're not in a Text() so the %11d trick doesn't work
+// "Speaker" = "Orador";
+// "of" = "de";
+"No more speakers" = "No más oradores";
+
+// DetailView
+"Meeting Info" = "Info de la Sesión";
+"Start Meeting" = "Iniciar la Sesión";
+"Length" = "Duración";
+"Color" = "Color";
+"History" = "Historia";
+"No meetings yet" = "No hay sesiónes";
+"Edit" = "EDITAR";
+"Cancel" = "CANCELAR";
+"Done" = "Hecho";
+
+//MeetingTimerView
+"Someone" = "Alguien";
+"is speaking" = "esta hablando";
+
+// EditView
+"Title" = "Título";
+"New Attendee" = "Nuevo Asistente";
+"Minutes" = "minutos";
+
+//HistoryView
+"Transcript" = "Transcripción";
+
+//ScrumsView
+"Dismiss" = "DESECHAR";
+"Add" = "AGREGAR";
