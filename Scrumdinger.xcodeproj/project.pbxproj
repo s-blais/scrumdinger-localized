@@ -63,6 +63,7 @@
 		AAD1604824F5BB640014DFC3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DC9161BA264AF5E600B2D333 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DC9161BC264AF62300B2D333 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC9161BD264B1D6500B2D333 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +200,7 @@
 				en,
 				Base,
 				es,
+				fr,
 			);
 			mainGroup = AA8ACE7724F44E01007DA4D8;
 			productRefGroup = AA8ACE8124F44E01007DA4D8 /* Products */;
@@ -261,6 +263,7 @@
 			children = (
 				DC9161BA264AF5E600B2D333 /* en */,
 				DC9161BC264AF62300B2D333 /* es */,
+				DC9161BD264B1D6500B2D333 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
