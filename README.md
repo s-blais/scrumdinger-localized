@@ -2,7 +2,7 @@
 
 ### Yes, hi, Perry Street Software!
 
-Experimenting with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial. Note that localization of this app is NOT part of the tutorial; figured it all out myself by reading the Xcode documentation and a handful of articles. 
+Experimenting with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial. Note that localization of this app is NOT part of the tutorial; figured it out by reading the Xcode documentation and a handful of articles. 
 
 Download the project, open the Scrumdinger.xcodeproj with Xcode, change your simulator language to ES/Español or FR/Français, then hit the Build&Run button.
 
