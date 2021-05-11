@@ -1,14 +1,14 @@
 # Scrumdinger – Localization Experiment
 
-### Yes, hi, Perry Street Software!
+### Hello! • ¡Hola! • Bonjour!
 
-Experimenting with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial. Note that localization of this app is NOT part of the tutorial; figured it out by reading the Xcode documentation and a handful of articles. 
+This repo is my experimentation with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial). Note that localization of this app is NOT in any way part of the tutorial; I figured it out how to do it by reading the Xcode documentation and a handful of articles. It's a very simple implementation of localization, nevertheless, success!
 
 Download the project, open the Scrumdinger.xcodeproj with Xcode, change your simulator language to ES/Español or FR/Français, then hit the Build&Run button.
 
 Some Notes:
 
-* Got ES and FR working! (Disclaimer: translation accuracy not guaranteed!)
+* Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
 * Couldn't quite figure out how to localize the strings that include interpolated values (e.g., "Speaker 3 of 5"). The `%11d` method I found in documentation doesn't seem to apply to interpolations in an explicit `return` or in a `Label()`.
 * Don't yet understand how some automatic(?) styled(?) upcasing of string elements in the base language doesn't carry over to the localizations. Seems rather awkward to have to `"Cancel" = "ANNULAR"`
 
