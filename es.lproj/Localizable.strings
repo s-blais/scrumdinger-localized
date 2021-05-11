@@ -6,7 +6,7 @@
   
 */
 // ScrumsView
-"Daily Scrums" = "Melé Diaria";
+"Daily Scrums" = "Melés Diaria";
 
 // CardView
 "Attendees" = "Asistentes";
@@ -38,7 +38,7 @@
 "No meetings yet" = "No hay sesiónes";
 "Edit" = "EDITAR";
 "Cancel" = "CANCELAR";
-"Done" = "Hecho";
+"Done" = "HECHO";
 
 //MeetingTimerView
 "Someone" = "Alguien";
