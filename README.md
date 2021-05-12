@@ -6,14 +6,14 @@ This repo is my experimentation with trying to localize a complete iOS app (this
 
 Download the project, open the Scrumdinger.xcodeproj with Xcode. Then, either:
 
-* In your running iOS simulator, Settings > General > Language & Region: change to ES/Español or FR/Français, then hit the Build&Run button in Xcode.
-* in Xcode, choose Product > Scheme > Edit Scheme. Select the Run scheme action in the left column, then Options on the right. Choose English or French from the popup menu.
+* In iOS simulator, Settings > General > Language & Region: change to ES/Español or FR/Français, then hit the Build&Run button in Xcode.
+* in Xcode, choose Product > Scheme > Edit Scheme. Select the Run scheme action in the left column, then Options on the right. Choose Spanish or French from the popup menu; Close; hit the Build%Run button.
 
 Some Notes:
 
 * Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
-* Couldn't quite figure out how to localize the strings that include interpolated values (e.g., "Speaker 3 of 5"). The `%11d` method I found in documentation doesn't seem to apply to interpolations in an explicit `return` or in a `Label()`.
-* The screenshots predate my realizing the debugging convention of upcasing nonlocalized strings. After fleshing out the EN strings file (perhaps not as optional as I'd assumed), they returned to mixed case; then, edited EN and FR to what they'd been initially. :man-facepalming:
+* Couldn't quite figure out how to localize the strings that include interpolated values (e.g., "Speaker 3 of 5"). The `%11d` method I found in documentation doesn't seem to apply to interpolations in an explicit `return` or in a `Label()`. I suspect this may have something to do with [Apple's general advisement of structuring an app for localization](https://developer.apple.com/localization/#structure): "make sure your user-visible text and images are separate from your executable code." 
+* The screenshots provided predate my realizing the debugging convention of upcasing nonlocalized strings. After fleshing out the EN strings file (perhaps not as optional as I'd assumed), they returned to the originally intended mixed case; then, edited EN and FR to what they'd been initially. :man_facepalming:
 
 This was fun, and I'd love to learn how these localizations are implemented on a larger scale.
 
