@@ -4,7 +4,10 @@
 
 This repo is my experimentation with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial). Note that localization of this app is NOT in any way part of the tutorial; I figured it out how to do it by reading the Xcode documentation and a handful of articles. It's a very simple implementation of localization, nevertheless, success!
 
-Download the project, open the Scrumdinger.xcodeproj with Xcode, change your simulator language to ES/Español or FR/Français, then hit the Build&Run button.
+Download the project, open the Scrumdinger.xcodeproj with Xcode. Then, either:
+
+* In your running iOS simulator, Settings > General > Language & Region: change to ES/Español or FR/Français, then hit the Build&Run button in Xcode.
+* in Xcode, choose Product > Scheme > Edit Scheme. Select the Run scheme action in the left column, then Options on the right. Choose English or French from the popup menu.
 
 Some Notes:
 
