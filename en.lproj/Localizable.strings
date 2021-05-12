@@ -1,9 +1,57 @@
-/* 
+/*
   Localizable.strings EN
   Scrumdinger
 
   Created by Stephen on 5/11/21.
   
 */
-
+// ScrumsView
 "Daily Scrums" = "Daily Scrums";
+
+// CardView
+"Attendees" = "Attendees";
+"Meeting length" = "Meeting length";
+
+//MeetingHeaderView
+"minute" = "minute";
+"minutes" = "minutes";
+"Seconds Elapsed" = "Seconds Elapsed";
+"Seconds Remaining" = "Seconds Remaining";
+"Time Remaining" = "Time Remaining";
+
+// MeetingFooterView
+"No more speakers" = "No more speakers";
+"Last Speaker" = "Last Speaker";
+"Next Speaker" = "Next Speaker";
+// how to represent strings with embedded interpolated values?
+// they're not in a Text() so the %11d trick doesn't work
+// "Speaker" = "Orador";
+// "of" = "de";
+"No more speakers" = "No more speakers";
+
+// DetailView
+"Meeting Info" = "Meeting Info";
+"Start Meeting" = "Start Meeting";
+"Length" = "Length";
+"Color" = "Color";
+"History" = "History";
+"No meetings yet" = "No meetings yet";
+"Edit" = "Edit";
+"Cancel" = "Cancel";
+"Done" = "Done";
+
+//MeetingTimerView
+"Someone" = "Someone";
+"is speaking" = "is speaking";
+
+// EditView
+"Title" = "Title";
+"New Attendee" = "New Attendee";
+"Minutes" = "Minutes";
+
+//HistoryView
+"Transcript" = "Transcript";
+
+//ScrumsView
+"Dismiss" = "Dismiss";
+"Add" = "Add";
