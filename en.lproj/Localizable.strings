@@ -27,7 +27,6 @@
 // they're not in a Text() so the %11d trick doesn't work
 // "Speaker" = "Orador";
 // "of" = "de";
-"No more speakers" = "No more speakers";
 
 // DetailView
 "Meeting Info" = "Meeting Info";
