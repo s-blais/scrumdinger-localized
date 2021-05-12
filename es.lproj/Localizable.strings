@@ -27,7 +27,6 @@
 // they're not in a Text() so the %11d trick doesn't work
 // "Speaker" = "Orador";
 // "of" = "de";
-"No more speakers" = "No más oradores";
 
 // DetailView
 "Meeting Info" = "Info de la Sesión";
@@ -47,7 +46,7 @@
 // EditView
 "Title" = "Título";
 "New Attendee" = "Nuevo Asistente";
-"Minutes" = "minutos";
+"Minutes" = "Minutos";
 
 //HistoryView
 "Transcript" = "Transcripción";
