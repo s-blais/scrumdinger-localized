@@ -36,9 +36,9 @@
 "Color" = "Color";
 "History" = "Historia";
 "No meetings yet" = "No hay sesiónes";
-"Edit" = "EDITAR";
-"Cancel" = "CANCELAR";
-"Done" = "HECHO";
+"Edit" = "Editar";
+"Cancel" = "Cancelar";
+"Done" = "Hecho";
 
 //MeetingTimerView
 "Someone" = "Alguien";
@@ -53,5 +53,5 @@
 "Transcript" = "Transcripción";
 
 //ScrumsView
-"Dismiss" = "DESECHAR";
-"Add" = "AGREGAR";
+"Dismiss" = "Desechar";
+"Add" = "Agregar";
