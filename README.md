@@ -13,7 +13,7 @@ Some Notes:
 
 * Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
 * Couldn't quite figure out how to localize the strings that include interpolated values (e.g., "Speaker 3 of 5"). The `%11d` method I found in documentation doesn't seem to apply to interpolations in an explicit `return` or in a `Label()`.
-* Don't yet understand how some automatic(?) styled(?) upcasing of string elements in the base language doesn't carry over to the localizations. Seems rather awkward to have to `"Cancel" = "ANNULAR"`
+* Don't yet understand how some automatic(?) styled(?) upcasing of string elements in the base language doesn't carry over to the localizations. Seems rather awkward to have to `"Cancel" = "ANNULAR"` DEVELOPING: Seems this is a debugging artifact, LOL... I'm looking into this
 
 This was fun, and I'd love to learn how these localizations are implemented on a larger scale.
 
