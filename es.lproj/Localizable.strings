@@ -32,6 +32,7 @@
 "Meeting Info" = "Info de la Sesión";
 "Start Meeting" = "Iniciar la Sesión";
 "Length" = "Duración";
+"meetingLength %11d" = "%11d minutos";
 "Color" = "Color";
 "History" = "Historia";
 "No meetings yet" = "No hay sesiónes";

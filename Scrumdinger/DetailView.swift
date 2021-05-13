@@ -22,7 +22,9 @@ struct DetailView: View {
                     Label("Length", systemImage: "clock")
                         .accessibilityLabel(Text("Meeting length"))
                     Spacer()
-                    Text("\(scrum.lengthInMinutes) minutes")
+                // Makes the string localizable with the interpolated value:
+                    Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), self.scrum.lengthInMinutes))
+                    // Text("\(scrum.lengthInMinutes) minutes")
                 }
                 HStack {
                     Label("Color", systemImage: "paintpalette")

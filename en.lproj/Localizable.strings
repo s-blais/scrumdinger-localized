@@ -32,6 +32,7 @@
 "Meeting Info" = "Meeting Info";
 "Start Meeting" = "Start Meeting";
 "Length" = "Length";
+"meetingLength %11d" = "%11d minutes";
 "Color" = "Color";
 "History" = "History";
 "No meetings yet" = "No meetings yet";

@@ -32,6 +32,7 @@
 "Meeting Info" = "Info de la Rencontre";
 "Start Meeting" = "Commencar la Rencontre";
 "Length" = "Durée";
+"meetingLength %11d" = "%11d minutes";
 "Color" = "Couleur";
 "History" = "Histoire";
 "No meetings yet" = "Pas rencontres";
