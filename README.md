@@ -13,7 +13,7 @@ Some Notes:
 
 * Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
 * Couldn't quite figure out how to localize the strings that include interpolated values (e.g., "Speaker 3 of 5"). The `%11d` method I found in documentation doesn't seem to apply to interpolations in an explicit `return` or in a `Label()`. I suspect this may have something to do with [Apple's general advisement of structuring an app for localization](https://developer.apple.com/localization/#structure): "make sure your user-visible text and images are separate from your executable code." 
-* The screenshots provided predate my realizing the debugging convention of upcasing nonlocalized strings. After fleshing out the EN strings file (perhaps not as optional as I'd assumed), they returned to the originally intended mixed case; then, edited EN and FR to what they'd been initially. :man_facepalming:
+* Screenshots have been updated since realizing the debugging convention of upcasing nonlocalized strings and squaring the localization string files accordingly.
 
 This was fun, and I'd love to learn how these localizations are implemented on a larger scale.
 
@@ -34,3 +34,7 @@ This was fun, and I'd love to learn how these localizations are implemented on a
 ![Edit Screen EN](http://s-blais.com/assets/scrumdinger-localized/Edit-EN.png)
 ![Edit Screen ES](http://s-blais.com/assets/scrumdinger-localized/Edit-ES.png)
 ![Edit Screen FR](http://s-blais.com/assets/scrumdinger-localized/Edit-FR.png)
+
+![History Screen EN](http://s-blais.com/assets/scrumdinger-localized/History-EN.png)
+![History Screen ES](http://s-blais.com/assets/scrumdinger-localized/History-ES.png)
+![History Screen FR](http://s-blais.com/assets/scrumdinger-localized/History-FR.png)
