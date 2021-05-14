@@ -12,8 +12,15 @@ Download the project, open the Scrumdinger.xcodeproj with Xcode. Then, either:
 Some Notes:
 
 * Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
-* Couldn't quite figure out how to localize the strings that include interpolated values (e.g., "Speaker 3 of 5"). The `%11d` method I found in documentation doesn't seem to apply to interpolations in an explicit `return` or in a `Label()`. I suspect this may have something to do with [Apple's general advisement of structuring an app for localization](https://developer.apple.com/localization/#structure): "make sure your user-visible text and images are separate from your executable code." UPDATE: Figured out the simpler one-interpolated-value ("[x] minutes") for the meeting detail view, but unable to find syntax guidance for the double-value MeetingFooterView ("Speaker [x] of [n]").
-* Screenshots have been updated since realizing the debugging convention of upcasing nonlocalized strings and squaring the localization string files accordingly.
+* Although I was able to convert the string-with-interpolated value in DetailView to an NSLocalizedString to pass the value with the string key, I haven't yet been able to determine the correct syntax to pass two values for the "Speaker [x] of [n]" string in MeetingFooterView.
+* Screenshots are updated as issues are resolved.
+
+```swift
+// DetailView.swift  
+Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), self.scrum.lengthInMinutes))  
+// Localizable.strings  
+"meetingLength %11d" = "%11d minutes";
+```
 
 This was fun, and I'd love to learn how these localizations are implemented on a larger scale.
 
