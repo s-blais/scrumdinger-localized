@@ -20,8 +20,10 @@ Some Notes:
 Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), self.scrum.lengthInMinutes))  
 // EditView.swift
 Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), Int(self.scrumData.lengthInMinutes)))
-// Localizable.strings  
-"meetingLength %11d" = "%11d minutes";
+// Localizable.strings EN & FR  
+"meetingLength %11d" = "%11d minutes";  
+// Localizable.strings ES  
+"meetingLength %11d" = "%11d minutos";
 ```
 
 This is fun, and I'd love to learn how these localizations are implemented on a larger scale.
