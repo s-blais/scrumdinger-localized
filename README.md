@@ -2,7 +2,7 @@
 
 ### Hello! • ¡Hola! • Bonjour!
 
-This repo is my experimentation with trying to localize a complete iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial). Note that localization of this app is NOT in any way part of the tutorial; I figured it out how to do it by reading the Xcode documentation and a handful of articles. It's a very simple implementation of localization, nevertheless, success!
+This repo is my experimentation with localizing an iOS app (this app is created as part of the Apple Developer [Develop Apps for iOS](https://developer.apple.com/tutorials/app-dev-training) tutorial). Note that localization of this app is NOT in any way part of the tutorial; I figured it out how to do it by reading the Xcode documentation and a handful of articles. It's a very simple implementation of localization, nevertheless, success!
 
 Download the project, open the Scrumdinger.xcodeproj with Xcode. Then, either:
 
@@ -12,35 +12,37 @@ Download the project, open the Scrumdinger.xcodeproj with Xcode. Then, either:
 Some Notes:
 
 * Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
-* Although I was able to convert the string-with-interpolated value in DetailView to an NSLocalizedString to pass the value with the string key, I haven't yet been able to determine the correct syntax to pass two values for the "Speaker [x] of [n]" string in MeetingFooterView.
+* Although I was able to convert the string-with-interpolated value in DetailView and EditView to an NSLocalizedString to pass the value with the string key, I haven't yet been able to determine the correct syntax to pass *two* values for the "Speaker [x] of [n]" string in MeetingFooterView.
 * Screenshots are updated as issues are resolved.
 
 ```swift
 // DetailView.swift  
 Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), self.scrum.lengthInMinutes))  
+// EditView.swift
+Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), Int(self.scrumData.lengthInMinutes)))
 // Localizable.strings  
 "meetingLength %11d" = "%11d minutes";
 ```
 
-This was fun, and I'd love to learn how these localizations are implemented on a larger scale.
+This is fun, and I'd love to learn how these localizations are implemented on a larger scale.
 
 ![Home Screen EN](http://s-blais.com/assets/scrumdinger-localized/Home-EN.png)
 ![Home Screen ES](http://s-blais.com/assets/scrumdinger-localized/Home-ES.png)
 ![Home Screen FR](http://s-blais.com/assets/scrumdinger-localized/Home-FR.png)
 
 
-![Detail Screen EN](http://s-blais.com/assets/scrumdinger-localized/Detail-EN.png)
-![Detail Screen ES](http://s-blais.com/assets/scrumdinger-localized/Detail-ES.png)
-![Detail Screen FR](http://s-blais.com/assets/scrumdinger-localized/Detail-FR.png)
+![Detail Screen EN](http://s-blais.com/assets/scrumdinger-localized/Detail-EN-v3.png)
+![Detail Screen ES](http://s-blais.com/assets/scrumdinger-localized/Detail-ES-v3.png)
+![Detail Screen FR](http://s-blais.com/assets/scrumdinger-localized/Detail-FR-v3.png)
 
-![Timer Screen EN](http://s-blais.com/assets/scrumdinger-localized/Timer-EN.png)
-![Timer Screen ES](http://s-blais.com/assets/scrumdinger-localized/Timer-ES.png)
-![Timer Screen FR](http://s-blais.com/assets/scrumdinger-localized/Timer-FR.png)
+![Timer Screen EN](http://s-blais.com/assets/scrumdinger-localized/Timer-EN-v2.png)
+![Timer Screen ES](http://s-blais.com/assets/scrumdinger-localized/Timer-ES-v2.png)
+![Timer Screen FR](http://s-blais.com/assets/scrumdinger-localized/Timer-FR-v2.png)
 
 
-![Edit Screen EN](http://s-blais.com/assets/scrumdinger-localized/Edit-EN.png)
-![Edit Screen ES](http://s-blais.com/assets/scrumdinger-localized/Edit-ES.png)
-![Edit Screen FR](http://s-blais.com/assets/scrumdinger-localized/Edit-FR.png)
+![Edit Screen EN](http://s-blais.com/assets/scrumdinger-localized/Edit-EN-v3.png)
+![Edit Screen ES](http://s-blais.com/assets/scrumdinger-localized/Edit-ES-v3.png)
+![Edit Screen FR](http://s-blais.com/assets/scrumdinger-localized/Edit-FR-v3.png)
 
 ![History Screen EN](http://s-blais.com/assets/scrumdinger-localized/History-EN.png)
 ![History Screen ES](http://s-blais.com/assets/scrumdinger-localized/History-ES.png)

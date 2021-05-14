@@ -17,7 +17,9 @@ struct EditView: View {
                     }
                     .accessibilityValue(Text("\(Int(scrumData.lengthInMinutes)) minutes"))
                     Spacer()
-                    Text("\(Int(scrumData.lengthInMinutes)) minutes")
+                // Makes the string localizable with the interpolated value:
+                    Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), Int(self.scrumData.lengthInMinutes)))
+                    // Text("\(Int(scrumData.lengthInMinutes)) minutes")
                         .accessibilityHidden(true)
                 }
                 ColorPicker("Color", selection: $scrumData.color)
