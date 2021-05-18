@@ -16,7 +16,10 @@ struct MeetingFooterView: View {
     }
     private var speakerText: String {
         guard let speakerNumber = speakerNumber else { return "No more speakers" }
-        return "Speaker \(speakerNumber) of \(speakers.count)"
+    // Makes the string localizable with the interpolated value:
+        let localizedString = NSLocalizedString("speakerXofN", comment: "")
+        return String.localizedStringWithFormat(localizedString, speakerNumber, speakers.count)
+        // return "Speaker \(speakerNumber) of \(speakers.count)"
     }
     var body: some View {
         VStack {

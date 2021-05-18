@@ -23,10 +23,7 @@
 "No more speakers" = "No más oradores";
 "Last Speaker" = "Último Orador";
 "Next Speaker" = "Próximo Orador";
-// how to represent strings with embedded interpolated values?
-// they're not in a Text() so the %11d trick doesn't work
-// "Speaker" = "Orador";
-// "of" = "de";
+"speakerXofN" = "Orador %d de %d";
 
 // DetailView
 "Meeting Info" = "Info de la Sesión";
