@@ -11,19 +11,25 @@ Download the project, open the Scrumdinger.xcodeproj with Xcode. Then, either:
 
 Some Notes:
 
-* Got ES and FR working (Disclaimer: translation accuracy not guaranteed!)
-* Although I was able to convert the string-with-interpolated value in DetailView and EditView to an NSLocalizedString to pass the value with the string key, I haven't yet been able to determine the correct syntax to pass *two* values for the "Speaker [x] of [n]" string in MeetingFooterView.
-* Screenshots are updated as issues are resolved.
+* Got ES and FR localizations working (Disclaimer: translation accuracy not guaranteed!)
+* The biggest speed bump in this exercise for me was incorporating interpolated values into the localized strings. Although I was able to convert the strings with a *single* interpolated value in DetailView and EditView to an NSLocalizedString to pass the value with the string key, I solicted a hint from the helpful @cambardell to nail down the correct syntax to pass *two* values for the "Speaker [x] of [n]" string in MeetingFooterView.
 
 ```swift
 // DetailView.swift  
 Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), self.scrum.lengthInMinutes))  
 // EditView.swift
 Text(String(format: NSLocalizedString("meetingLength %11d", comment: ""), Int(self.scrumData.lengthInMinutes)))
-// Localizable.strings EN & FR  
+// Localizable.strings EN & FR, ES
 "meetingLength %11d" = "%11d minutes";  
-// Localizable.strings ES  
 "meetingLength %11d" = "%11d minutos";
+
+// MeetingFooterView.swift
+let localizedString = NSLocalizedString("speakerXofN", comment: "")
+return String.localizedStringWithFormat(localizedString, speakerNumber, speakers.count)
+// Localizable.strings EN, ES, FR:
+"speakerXofN" = "Speaker %d of %d";
+"speakerXofN" = "Orador %d de %d";
+"speakerXofN" = "Orateur %d de %d";
 ```
 
 This is fun, and I'd love to learn how these localizations are implemented on a larger scale.
